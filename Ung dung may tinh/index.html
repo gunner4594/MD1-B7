@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        td {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<input type="number" name="number" id="number1"> <input type="number" name="number" id="number2"><br><br>
-<input type="button" name="Math" value="Addition(+)" onclick="add()">
-<input type="button" name="Math" value="Subtraction(-)" onclick="subtraction()">
-<input type="button" name="Math" value="Multiplication(X)" onclick="multiplication()">
-<input type="button" name="Math" value="Division(/)" onclick="division()"><br><br>
-<p id="result">Result:</p>
+<!--<input type="number" name="number" id="number1"> <input type="number" name="number" id="number2"><br><br>-->
+<!--<input type="button" name="Math" value="Addition(+)" onclick="add()">-->
+<!--<input type="button" name="Math" value="Subtraction(-)" onclick="subtraction()">-->
+<!--<input type="button" name="Math" value="Multiplication(X)" onclick="multiplication()">-->
+<!--<input type="button" name="Math" value="Division(/)" onclick="division()"><br><br>-->
+<!--<p id="result">Result:</p>-->
+
+<!--<script src="main.js"></script>-->
+
+<table border="1">
+    <tr>
+        <td colspan="4" style="text-align: left"><p id="result"></p></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="(" id="(" onclick="xuLyDulieu('(')"></td>
+        <td><input type="button" value=")" id=")" onclick="xuLyDulieu(')')"></td>
+        <td><input type="button" value="%" id="%" onclick="xuLyDulieu('%')"></td>
+        <td><input type="button" value="AC" id="AC" onclick="xoa()"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" id="7" onclick="xuLyDulieu('7')"></td>
+        <td><input type="button" value="8" id="8" onclick="xuLyDulieu('8')"></td>
+        <td><input type="button" value="9" id="9" onclick="xuLyDulieu('9')"></td>
+        <td><input type="button" value="/" id="/" onclick="xuLyDulieu('/')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" id="4" onclick="xuLyDulieu('4')"></td>
+        <td><input type="button" value="5" id="5" onclick="xuLyDulieu('5')"></td>
+        <td><input type="button" value="6" id="6" onclick="xuLyDulieu('6')"></td>
+        <td><input type="button" value="*" id="*" onclick="xuLyDulieu('*')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" id="1" onclick="xuLyDulieu('1')"></td>
+        <td><input type="button" value="2" id="2" onclick="xuLyDulieu('2')"></td>
+        <td><input type="button" value="3" id="3" onclick="xuLyDulieu('3')"></td>
+        <td><input type="button" value="-" id="-" onclick="xuLyDulieu('-')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="0" id="0" onclick="xuLyDulieu('0')"></td>
+        <td><input type="button" value="." id="." onclick="xuLyDulieu('.')"></td>
+        <td><input type="button" value="=" id="=" onclick="xuLyketQua('=')"></td>
+        <td><input type="button" value="+" id="+" onclick="xuLyDulieu('+')"></td>
+    </tr>
+</table>
+
 
 <script src="main.js"></script>
+
 </body>
 </html>
